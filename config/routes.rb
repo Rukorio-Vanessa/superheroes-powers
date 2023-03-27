@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   get '/heros', to: 'heros#index'
   get '/heros/:id', to: 'heros#show'
 
+  #Powers
+  get '/powers', to: 'powers#index'
+  get '/powers/:id', to: 'powers#show'
+  patch '/powers/id', to: 'powers#update'
 end
