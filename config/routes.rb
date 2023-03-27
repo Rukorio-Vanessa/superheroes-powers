@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   #Powers
   get '/powers', to: 'powers#index'
   get '/powers/:id', to: 'powers#show'
-  patch '/powers/id', to: 'powers#update'
+  patch '/powers/:id', to: 'powers#update'
 end
