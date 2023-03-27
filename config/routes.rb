@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   patch '/powers/:id', to: 'powers#update'
 
   #HeroPowers
-  post '/hero_powers', to: 'heropowers#create'
+  resources :hero_powers, only: [:create]
 end
