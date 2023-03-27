@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   get '/powers', to: 'powers#index'
   get '/powers/:id', to: 'powers#show'
   patch '/powers/:id', to: 'powers#update'
+
+  #HeroPowers
+  post '/hero_powers', to: 'heropowers#create'
 end
